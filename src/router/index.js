@@ -7,8 +7,8 @@ import News from '@/components/News'
 import Shop from '@/components/Shop'
 import Shopdesc from '@/components/Shopdesc'
 import zhuce from '@/components/zhuce'
-import shopcar from '@/components/shopcar'
-
+import Cart from '@/components/Cart'
+import newsdesc from '@/components/newsdesc'
 
 Vue.use(Router)
 export default new Router({
@@ -43,9 +43,17 @@ export default new Router({
       name: 'zhuce',
       component: zhuce
     },{
-      path: '/shopcar',
-      name: 'shopcar',
-      component: shopcar
+      path: '/Cart',
+      name: 'Cart',
+      component: Cart
+    },{
+      path: '/newsdesc',
+      name: 'newsdesc',
+      component: newsdesc
+    },
+    {
+      path:'/',
+      redirect:'/index'
     }
   ]
 })
