@@ -3,9 +3,10 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-import $ from  'jquery'
+// import $ from  'jquery'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
+
 import VueResource from 'vue-resource'
 import VueLazyload from 'vue-lazyload'
 import store from './router/store/store.js'
@@ -15,12 +16,13 @@ Vue.use(Vuex);
 Vue.use(VueResource);
 Vue.config.productionTip = false;
 Vue.use(ElementUI);
+
+//添加VueLazyload 选项
 Vue.use(VueLazyload, {
-  preLoad: 1,
-  error: '../static/images/subcode.gif',
-  loading: '../static/images/home_1.jpg',
-  attempt: 1
-})
+  preLoad: 1.3,//预载高度比例
+  error: '../static/images/new.jpg',
+  loading: '../static/images/subcode.gif'
+});
 
 
 /* eslint-disable no-new */

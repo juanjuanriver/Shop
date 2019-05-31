@@ -48,7 +48,7 @@
       </div>
     </table>
     <div v-if="!cart.length" :style="{height:home_first_height+'px'}">
-      <p class="empty">你的购物车空空如也</p>
+      <p class="empty">空荡荡的购物车好难受~<br>赶紧去看看有什么喜欢的东西吧！</p>
     </div>
   </div>
 
@@ -102,7 +102,6 @@
     },
     methods:{
       selectAll(){
-
         //依靠isAll
         if(this.isAll){
           this.cart.forEach(function(e){
@@ -162,8 +161,6 @@
     width: 0;
     height: 0;
   }
-
-
 .cart{
   width: 1060px;
   margin: auto;
@@ -186,7 +183,6 @@
     padding-right: 90%;
 
   }
-
   table{
     border-top: 2px solid #317ee7;
     margin:0 auto;

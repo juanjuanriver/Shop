@@ -15,62 +15,62 @@ const state={
   show:'index',
   news:[
     {
-      src:'../static/images/news.jpg',
+      src:'http://images.1626.com/public/upload/zixun/2019/05/17/1ce7a1d633817e1e5ae419eda756db40Xx4jj4_228x147.jpg',
       title:'篮球文化新基地，JORDAN 218 TIANHE正式开业',
       time:'2016/12/13'
     },
     {
-      src:'../static/images/news2.jpg',
+      src:'http://images.1626.com/public/upload/zixun/2019/05/17/7104fc9d4e0ddbf08ce3ffb65dd222fepn5G6v_228x147.jpg',
       title:'潮流教父藤原浩做的鸡你吃吗？',
       time:'2015/07/21'
     },
     {
-      src:'../static/images/news3.jpg',
+      src:'http://images.1626.com/public/upload/zixun/2019/05/20/c823e1bfef42831205e99464191d1ba8HhEzHz_228x147.jpg',
       title:'跨界发型屋！Edwin Watch Store × Barber shop...',
       time:'2015/07/16'
     },
     {
-      src:'../static/images/news4.jpeg',
+      src:'http://images.1626.com/public/upload/zixun/2019/05/21/5cf8418fcd64e655a10a92b3c6578dc65O7j78_228x147.jpg',
       title:'广州人气潮所地图&1626联乘卡贴领取方法',
       time:'2015/01/13'
     },
     {
-      src:'../static/images/news.jpg',
+      src:'http://images.1626.com/public/upload/zixun/2019/05/23/4ada7cdbaf71017e8aa6c098a93a685862Gd4B_228x147.jpg',
       title:'篮球文化新基地，JORDAN 218 TIANHE正式开业',
       time:'2016/12/13'
     },
     {
-      src:'../static/images/news2.jpg',
+      src:'http://images.1626.com/public/upload/zixun/2019/05/24/27ffd932b89bf3efff73a45cda69755e8r2nls_228x147.jpg',
       title:'潮流教父藤原浩做的鸡你吃吗？',
       time:'2015/07/21'
     },
     {
-      src:'../static/images/news3.jpg',
+      src:'http://images.1626.com/public/upload/zixun/2019/05/27/2f5c9921dd073cb299d52317ed55a2db8iHTQ0_228x147.jpg',
       title:'跨界发型屋！Edwin Watch Store × Barber shop...',
       time:'2015/07/16'
     },
     {
-      src:'../static/images/news4.jpeg',
+      src:'http://images.1626.com/public/upload/zixun/2019/05/16/22d15a027ed7a5adc21a8ed7e45b6036kPpA6Z_228x147.jpg',
       title:'广州人气潮所地图&1626联乘卡贴领取方法',
       time:'2015/01/13'
     },
     {
-      src:'../static/images/news.jpg',
+      src:'http://images.1626.com/public/upload/zixun/2019/05/14/e6891ba871cf6193177ca417ff9649a9J4z8tg_228x147.jpg',
       title:'篮球文化新基地，JORDAN 218 TIANHE正式开业',
       time:'2016/12/13'
     },
     {
-      src:'../static/images/news2.jpg',
+      src:'http://images.1626.com/public/upload/zixun/2019/02/14/111ab7f03c11d4480eb0ce2f0000ef572Tu67a_228x147.jpg',
       title:'潮流教父藤原浩做的鸡你吃吗？',
       time:'2015/07/21'
     },
     {
-      src:'../static/images/news3.jpg',
+      src:'http://images.1626.com/public/upload/zixun/2019/02/22/44e7ae4988ffaf3194c13defed60ffad9eECEU_228x147.jpg',
       title:'跨界发型屋！Edwin Watch Store × Barber shop...',
       time:'2015/07/16'
     },
     {
-      src:'../static/images/news4.jpeg',
+      src:'http://images.1626.com/public/upload/zixun/2019/02/26/59bc92c84824354bd6fadff8ba7798f6wKNhwv_228x147.jpg',
       title:'广州人气潮所地图&1626联乘卡贴领取方法',
       time:'2015/01/13'
     },
@@ -78,7 +78,7 @@ const state={
   goods:[
     //商品信息
     {
-      src:'../static/images/goods_7.jpg',
+      src:'../static/images/goods_1.jpg',
       title:'Staple 联名 V/Sual MA1 鸽子 裸女 飞行员空军夹克外套',
       shopsSrc:'../static/images/shops_1.jpg',
       shopsName:'jenry',
@@ -95,7 +95,7 @@ const state={
       completed:false//用来检测购物车中是否选中
     },
     {
-      src:'../static/images/goods_8.jpg',
+      src:'../static/images/goods_2.jpg',
       title:'MOSTWANTEDLAB 2016AW MWTD 植绒印花MA1飞行员夹克棉衣外套',
       shopsSrc:'../static/images/shops_2.jpg',
       shopsName:'买物教室',
@@ -112,7 +112,7 @@ const state={
       completed:false//用来检测购物车中是否选中
     },
     {
-      src:'../static/images/goods_9.jpg',
+      src:'../static/images/goods_3.jpg',
       title:'FTW FORTHEWIN M65 JTK 秋冬男重度水洗军事风四口袋工装夹克外套',
       shopsSrc:'../static/images/shops_1.jpg',
       price:380,
@@ -180,7 +180,7 @@ const state={
       completed:false//用来检测购物车中是否选中
     },
     {
-      src:'../static/images/goods_1.jpg',
+      src:'../static/images/goods_7.jpg',
       title:'DIE WELLE X TEAMAGE 联名款冲锋羽绒服 撒哈拉之眼 长款MA1 棉服',
       shopsSrc:'../static/images/shops_1.jpg',
       shopsName:'jenry',
@@ -197,7 +197,7 @@ const state={
       completed:false//用来检测购物车中是否选中
     },
     {
-      src:'../static/images/goods_2.jpg',
+      src:'../static/images/goods_8.jpg',
       title:'玩味十足！Stay gold  贪吃猫圆领披萨卫衣',
       shopsSrc:'../static/images/shops_2.jpg',
       shopsName:'买物教室',
@@ -214,7 +214,7 @@ const state={
       completed:false//用来检测购物车中是否选中
     },
     {
-      src:'../static/images/goods_3.jpg',
+      src:'../static/images/goods_9.jpg',
       title:'SOMETHNEW WTAPS原宿风格 纯色基础款打底抓绒套头圆领卫衣',
       shopsSrc:'../static/images/shops_1.jpg',
       price:199,
@@ -340,14 +340,11 @@ const mutations={
   }
 }
 const actions={
-  change_hw({commit},obj){
-    commit('CHANGE_HW',obj)
-  },
+  // change_hw({commit},obj){
+  //   commit('CHANGE_HW',obj)
+  // },
   changeShow({commit},type){
     commit('CHANGE_SHOW',type)
-  },
-  changeNowbrand({commit},type){
-    commit('CHANGE_NOWBRAND',type)
   },
   changeLike({commit},index){
     commit('CHANGE_LIKE',index)
@@ -386,36 +383,21 @@ const actions={
   }
 }
 const getters={
+  // 购物车的可视宽高
   getHW:function(state){
     return {
       h:state.clientheight,
       w:state.clientwidth
     }
   },
-  getBrands:function(state){
-    return state.brandsArr
-  },
-  getLeft_nav:function(state){
-    return state.left_nav
-  },
   getShow:function(state){
     return state.show
-  },
-  getFootItems:function(state){
-    return state.footItems
-  },
-  //返回点击的品牌
-  getIntro:function(state){
-    return state[state.nowbrand];
   },
   getNews:function(state){
     return state.news;
   },
   getGoods:function(state){
     return state.goods
-  },
-  getSelectedItem:function(state){
-    return state.selectedItem
   },
   getCart:function(state){
     return state.cart

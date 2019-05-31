@@ -1,5 +1,5 @@
 <template>
-  <div class="app">
+  <div>
     <el-tabs v-model="activeName" @tab-click="handleClick" id="colle">
       <el-tab-pane label="潮流" name="first">
         <div class="collections">
@@ -8,11 +8,11 @@
           </div>
         </div>
       </el-tab-pane>
-      <el-tab-pane label="潮鞋" name="second">潮鞋</el-tab-pane>
-      <el-tab-pane label="潮女" name="third">潮女</el-tab-pane>
-      <el-tab-pane label="娱乐" name="fourth">娱乐</el-tab-pane>
-      <el-tab-pane label="潮女" name="third">生活</el-tab-pane>
-      <el-tab-pane label="娱乐" name="fourth">文化</el-tab-pane>
+      <el-tab-pane label="潮鞋">潮鞋</el-tab-pane>
+      <el-tab-pane label="潮女">潮女</el-tab-pane>
+      <el-tab-pane label="娱乐">娱乐</el-tab-pane>
+      <el-tab-pane label="潮女">生活</el-tab-pane>
+      <el-tab-pane label="娱乐">文化</el-tab-pane>
     </el-tabs>
   </div>
 </template>

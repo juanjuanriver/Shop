@@ -1,5 +1,5 @@
 <template>
- <div class="News">
+ <div>
    <!-- 滚动公告开始-->
    <div id="ad_remove">
      <ul id="con1" ref="con1" :class="{anim:animate==true}">
@@ -7,18 +7,19 @@
      </ul>
    </div>
    <!--滚动公告结束-->
-
+   <!--内容新闻开始-->
    <div class="news">
      <div style="width: 980px;margin: 0 auto"><img src="../../static/images/newtlt.jpg" style="width: 100%"></div>
      <ul>
        <li v-for="content in contents" class="news_li">
+         <!--点击图片就能跳转页面-->
          <router-link to="/newsdesc" tag="img" :src="content.src" class="news_img"></router-link>
          <router-link to="/newsdesc" class="news_title">{{content.title}}</router-link>
          <p class="news_p">{{content.time}}</p>
        </li>
      </ul>
    </div>
-
+  <!--内容新闻结束-->
  </div>
 </template>
 <script>
@@ -34,19 +35,18 @@
           {name:"GIRL POWER 集结新女性“力”场"}
         ],
       }
-
     },
-
     created(){
       this.$store.dispatch('changeShow','news');
-      setInterval(this.scroll,2000) // 在钩子函数中调用我在method 里面写的scroll()方法，注意此处不要忘记加this,我在这个位置掉了好几次坑，都是因为忘记写this。
+      setInterval(this.scroll,2000) // 在钩子函数中调用在method 里面写的scroll()方法，注意此处不要忘记加this
     },
+    // 滚动公告的方法
     methods: {
       scroll(){
         let con1 = this.$refs.con1;
         con1.style.marginTop='-30px';
         this.animate=!this.animate;
-       const that = this; // 在异步函数中会出现this的偏移问题，此处一定要先保存好this的指向
+        const that = this; // 在异步函数中会出现this的偏移问题，此处一定要先保存好this的指向
         setTimeout(function(){
           that.items.push(that.items[0]);
           that.items.shift();
@@ -64,9 +64,6 @@
 </script>
 
 <style scoped>
-  .News{
-    /*background: pink;*/
-  }
   /*滚动公告开始*/
   #ad_remove{
     width: 300px;
@@ -91,6 +88,6 @@
   .news_li{display: inline-block;border: 1px solid #ccc;width: 226px;margin: 10px;box-sizing: border-box;height: 243px;vertical-align: top }
   .news_img{max-width: 100%;height: auto;cursor: pointer;}
   .news_title{word-wrap: break-word;word-break: break-all;color: #111;font-size: 16px;font-weight: bold;margin: 16px 0;display: inline-block;line-height: 20px;height: 40px;}
-  .news_p{white-space: nowrap; line-height: 16px;font: 14px;color:#999;text-align: left;padding-bottom: 5px;margin-bottom: 0}
+  .news_p{white-space: nowrap; line-height: 16px;color:#999;text-align: left;padding-bottom: 5px;margin-bottom: 0}
 /*news end*/
 </style>

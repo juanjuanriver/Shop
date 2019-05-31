@@ -2,7 +2,9 @@
   <div class="shop">
     <ul class="shop_ul">
       <li class="shop_li" v-for="(good,index) in goods">
+        <!--1.图片-->
         <img :src="good.src" alt="good" class="good_img" @mouseover="changeFlagTrue(index)" />
+        <!--2.图片信息开始-->
         <div class="good_info">
           <p @click="changeSelectedItem(index)">
             <router-link to="/Shopdesc" class="title_info">{{good.title}}</router-link>
@@ -12,12 +14,14 @@
             <span class="price_info"><img :src="'../../static/images/price.png'" alt="price"/><span class="price_num">{{good.price}}</span></span>
           </p>
         </div>
-
+        <!--2.图片信息结束-->
+        <!--3.显示是否喜欢-->
         <div class="layout" v-if="good.flag" @mouseout="changeFlagFalse(index,$event)" @click="changeSelectedItem(index)">
           <router-link to="/Shopdesc" tag="div" class="link">
             <p><img :src="'../../static/images/like.png'" alt="like"/><span class="like_num">{{good.likes}}</span></p>
           </router-link>
         </div>
+        <!--4.点赞-->
         <div class="like" :class="good.isLike?'toLike':'noLike'" @click="changeLike(index)" v-if="good.flag"></div>
       </li>
     </ul>
@@ -45,7 +49,8 @@
         this.$store.dispatch('changeFlagTrue',index)//改变是否显示喜欢
       },
       changeFlagFalse(index,e){
-        var evt=this.getRelatedTarget(e)
+        // getRelatedTarget获取相关目标；getAttribute获取属性
+        let evt=this.getRelatedTarget(e)
         if(evt.getAttribute('class')){
           if(!(evt.getAttribute('class').indexOf('like')!=-1)){
             this.$store.dispatch('changeFlagFalse',index)//改变是否显示喜欢
@@ -154,6 +159,20 @@
   .layout p{text-align: right;}
   .layout img{width: 21px;height: 20px;margin-right:5px ;border: none;}
   .layout .like_num{color:#fff;font-size: 18px;vertical-align: top;line-height: 20px;height: 20px;display: inline-block;font-weight: bold}
-  .like{top:115px;left: 50%;margin-left: -35px;position: absolute;width: 70px;height: 90px;    z-index: 9999;opacity: 1;cursor: pointer;}
-  .link{width: 290px;height: 290px;padding: 10px 10px 0 0}
+  .like{
+    top:115px;
+    left: 50%;
+    margin-left: -35px;
+    position: absolute;
+    width: 70px;
+    height: 90px;
+    z-index: 9999;
+    opacity: 1;
+    cursor: pointer;
+  }
+  .link{
+    width: 290px;
+    height: 290px;
+    padding: 10px 10px 0 0;
+  }
 </style>
